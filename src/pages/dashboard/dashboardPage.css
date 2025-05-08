@@ -1,0 +1,505 @@
+.dashboard-container {
+    width: 100%;
+    height: 100%;
+}
+
+.title-posts{
+    padding-top: 20px;
+    padding-left: 10%;
+    font-weight: 600;
+    font-size: 50px;
+    margin-bottom: -50px;
+}
+
+.nav-container {
+    position: fixed;
+    width: 200px;
+    height: 100%;
+    box-sizing: border-box;
+    z-index: 10;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background-color: rgb(255, 255, 255);
+    left: 0;
+    top: 0;
+    overflow-y: auto;
+}
+
+.nav-logo-container {
+    width: 70px;
+    height: 40px;
+}
+
+.logo-box {
+    display: flex;
+    margin-top: 50px;
+    margin-left: -10px;
+    place-items: center;
+}
+
+.nav-button {
+    font-size: 18px;
+    margin-left: 20px;
+    margin-right: 20px;
+    color: #595959;
+    cursor: pointer;
+    transition: 0.3s;
+}
+
+.nav-button:hover {
+    opacity: 0.7;
+}
+
+.nav-buttons-container {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    width: 100%;
+    bottom: 20px;
+    justify-content: center;
+    position: absolute;
+    font-size: 30px;
+}
+
+.sidebar i{
+    margin-left: 20px;
+    margin-right: 10px;
+}
+
+.content-container {
+    margin-left: 200px;
+    padding-bottom: 40px;
+}
+
+.posts-container {
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: 50px;
+    width: 100%;
+    padding-bottom: 30px;
+}
+
+.post-card {
+    margin-top: 40px;
+    margin-bottom: -30px;
+    margin-left: 150px;
+    padding: 20px;
+    display: flex;
+    flex-direction: column;
+    cursor: pointer;
+    transition: transform 0.3s ease;
+    border: 2px solid #ccc;
+    border-radius: 10px;
+    background-color: rgba(255, 255, 255, 0.7);
+    width: calc(100% - 300px);
+    max-height: 90vh;
+    overflow: hidden;
+}
+
+.post-card:hover {
+    transform: scale(1.05);
+}
+
+.post-card-title {
+    font-size: 22px;
+    margin-top: 5px;
+    margin-bottom: 5px;
+    font-weight: bold;
+    color: #0e0e10;
+}
+
+.post-card-text {
+    font-size: 14px;
+    margin-bottom: 5px;
+    color: #666;
+}
+
+.post-box {
+    display: flex;
+    align-items: center;
+    margin-bottom: 5px;
+}
+
+.text-box {
+    display: flex;
+    align-items: center;
+    margin-right: 10px;
+    font-size: 10px;
+}
+
+.text-box i {
+    margin-right: 5px;
+}
+
+.text-box span {
+    font-size: 14px;
+    color: #555;
+}
+
+.post-avatar-container {
+    height: 200px;
+}
+
+.settings-container {
+    font-size: 24px;
+    margin-left: 10px;
+    margin-top: 70px;
+    display: flex;
+    flex-direction: row;
+    gap: 60px;
+    justify-items: center;
+}
+
+.settings-form {
+    display: flex;
+    flex-direction: column;
+    margin-top: 20px;
+    margin-bottom: 10px;
+    background-color: rgba(255, 255, 255, 0.7);
+    border-radius: 20px;
+    width: 400px;
+    padding: 10px;
+    font-size: 16px;
+}
+
+.buttons-box{
+    display: flex;
+    flex-direction: row;
+    gap: 20px;
+    padding: 20px;
+    position: relative;
+    top: 0;
+    margin-bottom: -50px;
+    margin-top: 30px;
+}
+
+.buttons-box i{
+    margin-left: 10px;
+}
+
+.user-post {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.user-post .post-card{
+    margin-left: 0;
+}
+
+.buttons-box button{
+    margin-top: -10px;
+    width: 300px;
+}
+
+.btn-editar:hover{
+    background-color: #ffc800;
+    border: #b89600;
+    color: #fff;
+}
+
+.btn-eliminar:hover{
+    background-color: #e60a0a;
+    border: #9a0909;
+    color: #fff;
+}
+
+.settings-form button {
+    margin-top: 10px;
+    margin-bottom: 10px;
+    padding: 10px;
+    font-size: 18px;
+    background-color: #0b336b;
+    color: white;
+    border: none;
+    cursor: pointer;
+    transition: 0.3s;
+}
+
+.settings-form button:hover {
+    opacity: 0.7;
+}
+
+.settings-form button:disabled {
+    opacity: 0.3;
+}
+
+.post-container {
+    width: 100%;
+    margin: 0 auto;
+    padding: 20px;
+}
+
+.post-video-description-section {
+    display: flex;
+    flex-direction: column;
+}
+
+.post-video-container {
+    width: 50%;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.post-description{
+    padding-left: 10px;
+}
+
+.post-description-body{
+    padding-left: 10px;
+    font-size: 20px;
+}
+
+.post-description-container {
+    margin-top: 20px;
+}
+
+.post-description-title {
+    font-size: 50px;
+    margin-bottom: 20px;
+    font-weight: bolder;
+    color: #000;
+}
+
+.post-description-item {
+    display: flex;
+    align-items: center;
+}
+
+.post-description-box {
+    border: 2px solid #ccc;
+    border-radius: 15px;
+    padding: 20px;
+    margin: 0 auto;
+    background-color: rgba(255, 255, 255, 0.7);
+    width: 800px;
+}
+
+.post-description-text {
+    font-size: 16px;
+    line-height: 1.6;
+}
+
+.post-follow-button {
+    margin-top: 20px;
+    height: 40px;
+    width: 150px;
+    font-size: 16px;
+    border: none;
+    background-color: #0b336b;
+    color: white;
+    cursor: pointer;
+    transition: opacity 0.3s;
+}
+
+.post-follow-button:hover {
+    opacity: 0.8;
+}
+
+.details-box {
+    display: flex;
+    justify-content: space-between;
+    padding: 20px;
+    margin-top: -10px;
+}
+
+.message-description-box {
+    margin-top: 20px;
+}
+
+.message-title {
+    font-size: 30px;
+    font-weight: 600;
+}
+
+.message-container {
+    margin-top: 15px;
+    border: 2px solid #ffffff;
+    border-radius: 10px;
+    padding: 10px;
+    background-color: rgba(255, 255, 255, 0.7);
+}
+
+.message-item {
+    display: flex;
+    align-items: center;
+    margin-bottom: 5px;
+}
+
+.message-item i {
+    font-size: 13px;
+    color: #666;
+}
+
+.message-user {
+    padding-left: 7px;
+    font-size: 12px;
+    color: #666;
+}
+
+.message {
+    font-size: 17px;
+    color: #333;
+}
+
+.message-text {
+    margin-left: 10px;
+}
+
+.message-text .message {
+    font-weight: 400;
+    line-height: 1.5;
+}
+
+.new-message-box {
+    position: fixed;
+    bottom: 10px;
+}
+
+.new-message {
+    padding: 10px;
+    border: solid 2px #b5b3b3;
+    border-radius: 10px;
+    width: 147%;
+    outline: none;
+}
+
+.send-button {
+    margin-left: 10px;
+    position: absolute;
+    margin-top: -41px;
+    margin-left: 645px;
+    width: 60px;
+}
+
+.spinner-container {
+    position: absolute;
+    width: 100%;
+    height: 100vh;
+    background-color: rgba(255, 255, 255, 0.8);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    z-index: 1000;
+}
+
+.spinner {
+    border: 4px solid rgba(0, 0, 0, 0.3);
+    border-top: 4px solid #000;
+    border-radius: 50%;
+    width: 40px;
+    height: 40px;
+    animation: spin 1s linear infinite;
+}
+
+@keyframes spin {
+    0% {
+        transform: rotate(0deg);
+    }
+
+    100% {
+        transform: rotate(360deg);
+    }
+}
+
+.new-post-title{
+    font-size: 30px;
+    font-weight: 700;
+}
+
+.new-post-container {
+    width: 100%;
+    max-width: 600px;
+    margin: 0 auto;
+    padding: 20px;
+    border: 1px solid #ccc;
+    border-radius: 10px;
+    background-color: #f9f9f9;
+}
+
+.new-post-title {
+    font-size: 24px;
+    font-weight: bold;
+    margin-bottom: 20px;
+    display: block;
+}
+
+.new-post-form {
+    display: flex;
+    flex-direction: column;
+}
+
+.post-input-box,
+.post-input-text-box {
+    position: relative;
+    margin-bottom: 20px;
+    margin-right: 20px;
+}
+
+.post-input-text-box {
+    position: relative;
+    margin-bottom: 20px;
+    margin-right: 20px;
+}
+
+.post-text {
+    height: 200px;
+    width: 00px;
+}
+
+.post-input,
+.post-text {
+    width: 100%;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    font-size: 16px;
+}
+
+.post-input:focus,
+.post-text:focus {
+    outline: none;
+    border-color: #4CAF50;
+}
+
+.post-input:focus + i,
+.post-text:focus + i {
+    color: #4CAF50;
+}
+
+.post-input-box i.fa-solid {
+    position: absolute;
+    right: 10px;
+    top: 50%;
+    transform: translateY(-50%);
+    color: #aaa;
+}
+
+.post-input-text-box i.fa-solid {
+    position: absolute;
+    right: 10px;
+    top: 12%;
+    transform: translateY(-50%);
+    color: #aaa;
+}
+
+button {
+    width: 100%;
+    padding: 10px;
+    border: none;
+    border-radius: 5px;
+    background-color: #454545;
+    color: #313131;
+    font-size: 16px;
+    cursor: pointer;
+}
+
+button:hover {
+    background-color: #45a049;
+}
+
+button:disabled {
+    background-color: #ccc;
+    cursor: not-allowed;
+}
